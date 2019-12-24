@@ -1,0 +1,110 @@
+html {
+    font: 125%/1.5 lato, sans-serif;
+}
+
+body {
+    color: #222;
+}
+
+#site-header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#site-header, #content {
+    max-width: 700px;
+}
+
+#site-title {
+    font-size: 200%;
+    font-weight: normal;
+    text-transform: lowercase;
+    /* margin: 0; */
+}
+
+#site-title a {
+    color: inherit;
+}
+
+#site-title a:hover {
+    text-decoration: none;
+}
+
+#site-title, #site-nav {
+    margin: 1rem auto;
+}
+
+#site-nav {
+    border-style: solid;
+    border-color: #999;
+    border-width: 1px 0;
+    color: #999;
+    line-height: 2;
+}
+
+#site-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#site-nav li {
+    display: inline;
+    list-style: none;
+    margin: 0 1em 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+#site-nav a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: color 0.2s;
+}
+
+#site-nav a:hover {
+    color: #222;
+}
+
+#content {
+    margin: 0 auto;
+}
+
+.post {
+    margin: 0 0 3rem 0;
+}
+
+.post__date {
+    color: #888;
+    font-size: 90%;
+}
+
+h2 {
+    font-size: 150%;
+    margin: 0;
+}
+
+h2 > a {
+    color: inherit;
+}
+
+.post__content {
+    color: #444;
+}
+
+p, li {
+    margin: 1.5em 0;
+}
+
+a {
+    color: #3f8df2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: "⁠— ";
+}

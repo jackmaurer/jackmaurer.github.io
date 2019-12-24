@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<meta name="description" content="I'm a high school senior with a passion for code. Here you can take a look at some of the things I've created and read about how I made them.">
 <title>{{ page.title }}</title>
-<h1>Jack Maurer</h1>
-<div>{{ content }}</div>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/main.css">
+<header id="site-header">
+    <h1 id="site-title">
+        <a href="/">Jack Maurer</a>
+    </h1>
+    <nav id="site-nav">
+        <ul>
+            <li><a href="/about.html">About</a>
+            <li><a href="/projects">Projects</a>
+            <li><a href="/contact.html">Contact</a>
+        </ul>
+    </nav>
+</header>
+<div id="content">{{ content }}</div>
