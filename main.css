@@ -135,8 +135,12 @@ figcaption {
 }
 
 pre {
-  line-height: 1;
+  line-height: 1.5;
   max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+code {
+  font-family: "ubuntu mono", monospace;
 }

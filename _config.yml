@@ -1,5 +1,2 @@
 name: Jack Maurer
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
