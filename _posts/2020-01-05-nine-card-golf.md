@@ -239,7 +239,7 @@ To test out the AI, I pitted it against a seasoned nines player, myself. In a se
   </figcaption>
 </figure>
 
-The computer, in other words, is about as good at playing nines as I am.
+The computer, in other words, is about as good at nines as I am.
 
 [View this project's source code on GitHub](https://github.com/jackmaurer/nines)
 
