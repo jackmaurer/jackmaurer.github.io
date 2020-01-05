@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Weekend Project: Nine-Card Golf in Python (with an AI Opponent)"
 tags: [python, ai, statistics]
 date: 2020-01-05
