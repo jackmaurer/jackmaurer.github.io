@@ -1,5 +1,5 @@
 html {
-    font: 125%/1.5 lato, sans-serif;
+    font: 125%/1.8 "public sans", sans-serif;
 }
 
 body {
@@ -92,7 +92,7 @@ h2 > a {
     color: #444;
 }
 
-p, li {
+p, li, figure {
     margin: 1.5em 0;
 }
 
@@ -105,6 +105,35 @@ a:hover {
     text-decoration: underline;
 }
 
-li {
+ul {
     list-style: "⁠— ";
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+}
+
+th {
+  text-align: left;
+}
+
+figure {
+  text-align: center;
+}
+
+figure > table {
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 80%;
+}
+
+pre {
+  line-height: 1;
 }
