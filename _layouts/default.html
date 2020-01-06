@@ -3,11 +3,13 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153639035-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  if (window.location.hostname != "localhost") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-153639035-1');
+    gtag('config', 'UA-153639035-1');
+  }
 </script>
 <meta name="description" content="I'm a high school senior with a passion for code. Here you can take a look at some of the things I've created and read about how I made them.">
 <title>{{ page.title }}</title>
