@@ -139,6 +139,8 @@ pre {
   max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
+  border: 1px solid #ccc;
+  padding: 1em;
 }
 
 code {
