@@ -29,7 +29,7 @@ Lately I've been working on a fairly large project that's mainly web-based (more
 
 The first thing I did was open up IDLE and begin hammering away.
 
-The second thing I did was switch to Atom. Sorry, Guido, but IDLE sucks.
+The second thing I did was switch to Atom. Sorry, [Guido](https://en.wikipedia.org/wiki/Guido_van_Rossum), but IDLE sucks.
 
 Writing the code for the game itself was easy enough. All it needed to do was repeatedly loop through a list of players, rendering their hands as ASCII art, like this:
 
