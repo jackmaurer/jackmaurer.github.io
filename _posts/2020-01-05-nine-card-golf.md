@@ -194,12 +194,12 @@ To test out the AI, I pitted it against a seasoned nines player, myself. In a se
     </thead>
     <tbody>
       <tr>
-        <td>Expected number of wins, <i>o</i></td>
+        <td>Expected number of wins, <i>e</i></td>
         <td style="text-align: right">5</td>
         <td style="text-align: right">5</td>
       </tr>
       <tr>
-        <td>Observed number of wins, <i>e</i></td>
+        <td>Observed number of wins, <i>o</i></td>
         <td style="text-align: right">6</td>
         <td style="text-align: right">4</td>
       </tr>
