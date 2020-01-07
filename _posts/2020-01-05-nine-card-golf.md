@@ -214,8 +214,13 @@ To test out the AI, I pitted it against a seasoned nines player, myself. In a se
         <td style="text-align: right">1</td>
       </tr>
       <tr>
+        <td>(<i>o</i> − <i>e</i>)<sup>2</sup>/<i>e</i></td>
+        <td style="text-align: right">0.2</td>
+        <td style="text-align: right">0.2</td>
+      </tr>
+      <tr>
         <td>χ<sup>2</sup></td>
-        <td colspan="2" style="text-align: right">2</td>
+        <td colspan="2" style="text-align: right">0.4</td>
       </tr>
       <tr>
         <td>Degrees of freedom</td>
@@ -223,7 +228,7 @@ To test out the AI, I pitted it against a seasoned nines player, myself. In a se
       </tr>
       <tr>
         <td>p-value</td>
-        <td colspan="2" style="text-align: right">0.1573</td>
+        <td colspan="2" style="text-align: right">0.5271</td>
       </tr>
     </tbody>
   </table>
