@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "Generating Unique Keys for Vue Components"
 tags: [javascript, vue, statistics]
+excerpt: "I've been working a lot with Vue lately, and while it's generally been a pleasant experience, there's one challenge that I keep running into: generating unique component keys."
 date: 2020-01-09
 ---
 

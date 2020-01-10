@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "Weekend Project: Nine-Card Golf in Python (with an AI Opponent)"
 tags: [weekend-project, python, ai, statistics]
+excerpt: "If your family is anything like mine, you probably play a lot of card games over the holidays. One in particular that's become a tradition in my family is a game we like to call nines. The thing is, no one else calls it that."
 date: 2020-01-05
 ---
 
