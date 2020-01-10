@@ -130,7 +130,7 @@ figure > table {
   margin: 0 auto;
 }
 
-figcaption {
+figcaption, .footnotes {
   font-size: 80%;
 }
 

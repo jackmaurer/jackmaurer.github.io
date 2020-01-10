@@ -39,7 +39,7 @@ Writing the code for the game itself was easy enough. All it needed to do was re
 +--+ +--+ +--+ +--+ +--+ +--+ +--+ +--+ +--+ +--+ +--+ +--+ +--+
 ```
 
-...and soliciting user input as needed (**Python standard library tip:** [`itertools.cycle`](https://docs.python.org/3/library/itertools.html#itertools.cycle) lets you iterate through the items in a list indefinitely, going back to the beginning of the list each time you reach the last item).
+...and soliciting user input as needed (**Python standard library tip:** [`itertools.cycle()`](https://docs.python.org/3/library/itertools.html#itertools.cycle) lets you iterate through the items in a list indefinitely, going back to the beginning of the list each time you reach the last item).
 
 But I also wanted to create a computer opponent, and this proved somewhat more challenging for the general reason that manufacturing high-quality input tends to be more difficult than evaluating existing input. That is, it's harder to figure out the move that will win the game than it is to determine whether or not a given move results in victory; in the former case, the decision tree is a lot bigger.
 

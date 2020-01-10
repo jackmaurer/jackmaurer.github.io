@@ -12,9 +12,11 @@ title: Jack Maurer
             <div class="post__content">
                 {{ post.content }}
             </div>
-            <div>
-              <a href="{{ post.url }}#disqus_thread">Post a comment</a>
-            </div>
+            {% if post.comments %}
+              <div>
+                <a href="{{ post.url }}#disqus_thread">Post a comment</a>
+              </div>
+            {% endif %}
         </div>
     {% endfor %}
 </div>
