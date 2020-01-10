@@ -4,26 +4,35 @@ html {
 
 body {
     color: #444;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
 }
 
-#site-header {
-    text-align: center;
+#site-header-outer, #content-outer {
+  margin: 0.5rem;
+}
+
+#site-header, #site-nav-inner-inner, #content {
+    max-width: 700px;
     margin: 0 auto;
 }
 
-#site-header, #content {
-    max-width: 700px;
+#site-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#site-title, #searchbox-outer {
+  flex: 1 0 auto;
 }
 
 #site-title {
     font-size: 200%;
     font-weight: normal;
     text-transform: lowercase;
-    /* margin: 0; */
 }
 
 #site-title a {
@@ -38,6 +47,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1rem auto;
 }
 
+#searchbox-outer {
+  margin: auto;
+}
+
 #site-nav {
     border-style: solid;
     border-color: #999;
@@ -46,17 +59,36 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 2;
 }
 
+#site-nav-inner {
+  margin: 0 0.5rem;
+}
+
+#site-nav-inner-inner {
+  display: flex;
+}
+
 #site-nav ul {
     padding: 0;
     margin: 0;
+    flex: 1 0 auto;
 }
 
 #site-nav li {
-    display: inline;
-    list-style: none;
-    margin: 0 1em 0 0;
-    padding: 0;
-    text-align: center;
+  display: inline;
+  list-style: none;
+  padding: 0;
+}
+
+#site-nav__internal-links li {
+  margin: 0 1em 0 0;
+}
+
+#site-nav__external-links {
+  text-align: right;
+}
+
+#site-nav__external-links li {
+  margin: 0 0 0 1em;
 }
 
 #site-nav a {
@@ -68,10 +100,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #site-nav a:hover {
     color: #222;
-}
-
-#content {
-    margin: 0 auto;
 }
 
 .post {

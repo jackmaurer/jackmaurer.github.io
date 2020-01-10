@@ -3,13 +3,13 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153639035-1"></script>
 <script>
-  if (window.location.hostname != "localhost") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+if (window.location.hostname != "localhost") {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'UA-153639035-1');
-  }
+  gtag('config', 'UA-153639035-1');
+}
 </script>
 <title>{{ page.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
@@ -17,17 +17,31 @@
 <link href="https://fonts.googleapis.com/css?family=Public+Sans:400,400i,700,700i|Ubuntu+Mono:400,400i,700,700i&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/default.css">
 <link rel="stylesheet" href="/main.css">
-<header id="site-header">
+<div id="site-header-outer">
+  <header id="site-header">
     <h1 id="site-title">
-        <a href="/">Jack Maurer</a>
+      <a href="/">Jack Maurer</a>
     </h1>
-    <nav id="site-nav">
-        <ul>
-            <li><a href="/about.html">About</a>
-            <li><a href="https://github.com/jackmaurer">GitHub</a>
-        </ul>
-        <script async src="https://cse.google.com/cse.js?cx=001423413126153447980:efgsvd3w8jo"></script>
-        <div class="gcse-searchbox-only"></div>
-    </nav>
-</header>
-<div id="content">{{ content }}</div>
+    <div id="searchbox-outer">
+      <script async src="https://cse.google.com/cse.js?cx=001423413126153447980:efgsvd3w8jo"></script>
+      <div class="gcse-searchbox-only"></div>
+    </div>
+  </header>
+</div>
+<nav id="site-nav">
+  <div id="site-nav-inner">
+    <div id="site-nav-inner-inner">
+      <ul id="site-nav__internal-links">
+        <li><a href="/about.html">About</a>
+        <li><a href="/projects">Projects</a>
+      </ul>
+      <ul id="site-nav__external-links">
+        <li><a href="https://github.com/jackmaurer">GitHub</a>
+        <li><a href="https://twitter.com/JackMaurer10">Twitter</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="content-outer">
+  <div id="content">{{ content }}</div>
+</div>
