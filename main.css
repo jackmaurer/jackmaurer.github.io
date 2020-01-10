@@ -25,14 +25,11 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
-#site-title, #searchbox-outer {
-  flex: 1 0 auto;
-}
-
 #site-title {
     font-size: 200%;
     font-weight: normal;
     text-transform: lowercase;
+    flex: 1 0 auto;
 }
 
 #site-title a {
@@ -48,7 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #searchbox-outer {
-  margin: auto;
+  margin: auto 0;
+  flex: 0 0 16em;
 }
 
 #site-nav {
