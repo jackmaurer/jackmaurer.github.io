@@ -3,7 +3,11 @@ html {
 }
 
 body {
-    color: #222;
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
 }
 
 #site-header {
@@ -88,10 +92,6 @@ h2 > a {
     color: inherit;
 }
 
-.post__content {
-    color: #444;
-}
-
 p, li, figure {
     margin: 1.5em 0;
 }
@@ -109,32 +109,32 @@ ul {
     list-style: "⁠— ";
 }
 
-table {
+#content table {
   border-collapse: collapse;
 }
 
-table, th, td {
+#content table, #content th, #content td {
   border: 1px solid #ccc;
   padding: 0.5em;
 }
 
-th {
+#content th {
   text-align: left;
 }
 
-figure {
+#content figure {
   text-align: center;
 }
 
-figure > table {
+#content figure > table {
   margin: 0 auto;
 }
 
-figcaption, .footnotes {
+#content figcaption, #content .footnotes {
   font-size: 80%;
 }
 
-pre {
+#content pre {
   line-height: 1.5;
   max-width: 100%;
   overflow-x: auto;
@@ -143,6 +143,6 @@ pre {
   padding: 1em;
 }
 
-code {
+#content code {
   font-family: "ubuntu mono", monospace;
 }
