@@ -11,12 +11,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #222;
 }
 
-#site-header-outer, #content-outer {
+#site-header-outer {
   margin: 1rem;
 }
 
 #content-outer {
-  margin-bottom: 3rem;
+  margin: 3rem 1rem;
 }
 
 #site-header, #site-nav-inner-inner, #content, #site-footer-inner-inner {
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post {
-    margin: 0 0 3rem 0;
+    margin: 3rem 0;
 }
 
 .post__date {
