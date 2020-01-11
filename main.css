@@ -12,10 +12,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #site-header-outer, #content-outer {
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
-#site-header, #site-nav-inner-inner, #content {
+#content-outer {
+  margin-bottom: 3rem;
+}
+
+#site-header, #site-nav-inner-inner, #content, #site-footer-inner-inner {
     max-width: 700px;
     margin: 0 auto;
 }
@@ -30,6 +34,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     text-transform: lowercase;
     flex: 1 0 auto;
+    margin: 0;
 }
 
 #site-title a {
@@ -40,8 +45,8 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-#site-title, #site-nav {
-    margin: 1rem auto;
+#site-nav {
+    margin: 1rem 0;
 }
 
 #searchbox-outer {
@@ -49,16 +54,22 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 16em;
 }
 
-#site-nav {
+#site-nav, #site-footer {
     border-style: solid;
     border-color: #999;
-    border-width: 1px 0;
-    color: #999;
-    line-height: 2;
 }
 
-#site-nav-inner {
-  margin: 0 0.5rem;
+#site-nav {
+  border-width: 1px 0;
+  line-height: 2;
+}
+
+#site-footer {
+  border-width: 1px 0 0 0;
+}
+
+#site-nav-inner, #site-footer-inner {
+  margin: 0 1rem;
 }
 
 #site-nav-inner-inner {
@@ -89,14 +100,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 1em;
 }
 
-#site-nav a {
-    color: inherit;
+#site-nav a, #site-footer a {
+    color: #777;
     text-decoration: none;
     text-transform: lowercase;
     transition: color 0.2s;
 }
 
-#site-nav a:hover {
+#site-nav a:hover, #site-footer a:hover {
     color: #222;
 }
 
@@ -135,9 +146,9 @@ a:hover {
     text-decoration: underline;
 }
 
-ul {
+/* ul {
     list-style: "⁠— ";
-}
+} */
 
 #content table {
   border-collapse: collapse;
@@ -160,7 +171,7 @@ ul {
   margin: 0 auto;
 }
 
-#content figcaption, #content .footnotes {
+#content figcaption, #content .footnotes, #site-footer {
   font-size: 80%;
 }
 
@@ -175,4 +186,21 @@ ul {
 
 #content code {
   font-family: "ubuntu mono", monospace;
+}
+
+#site-footer-nav {
+  display: flex;
+  margin: 1.5em 0;
+}
+
+#site-footer-nav ul {
+  padding: 0;
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+#site-footer-nav li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
