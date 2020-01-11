@@ -73,13 +73,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #site-nav-inner-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 #site-nav ul {
     padding: 0;
     margin: 0;
-    flex: 1 0 auto;
 }
 
 #site-nav li {
