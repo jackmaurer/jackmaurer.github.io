@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 #site-title {
     font-size: 200%;
     font-weight: normal;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     flex: 1 0 auto;
     margin: 0;
 }
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 #site-nav a, #site-footer a {
     color: #777;
     text-decoration: none;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     transition: color 0.2s;
 }
 
