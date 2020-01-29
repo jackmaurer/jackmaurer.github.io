@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>word find</title>
+<style>
+  html {
+    font-size: 150%;
+  }
+  body {
+    color: #222;
+  }
+  #board td {
+    text-align: center;
+    border: 1px solid #999;
+    text-transform: uppercase;
+    font-size: 200%;
+    padding: 0;
+    width: 1em;
+    line-height: 1em;
+  }
+  #board td.selected {
+    background: #222;
+    color: #fff;
+  }
+  #word-input {
+    font: inherit;
+  }
+  .column {
+    /*float: left;*/
+  }
+</style>
+<div id="game">
+  <button @click="game.newRound()">New round</button>
+  <div v-if="game.round">
+    <div id="timer">{{ game.round.minutes }}:{{ game.round.seconds }}</div>
+    <div>{{ game.round.wordsFound.length }} of {{ game.words.length }} found</div>
+    <table id="board">
+      <tr v-for="row in game.board">
+        <td v-for="tile in row" :class="{selected: tile.selected}">
+          {{ tile.letter }}
+        </td>
+      </tr>
+    </table>
+    <form @submit.prevent="handleSubmit">
+      <input
+          type="text"
+          ref="wordInput"
+          id="word-input"
+          v-model="word"
+          @focus="$event.target.select()"
+          :disabled="!game.round || game.round.isOver">
+    </form>
+    <div class="column">
+      <h2>Found</h2>
+      <ol reversed>
+        <li v-for="word in game.round.wordsFound.slice().reverse()">
+          {{ word }}
+        </li>
+      </ol>
+    </div>
+    <div v-if="game.round && game.round.isOver" class="column">
+      <h2>Not found</h2>
+      <ol>
+        <li v-for="word in game.words.filter(word => (game.round.wordsFound.indexOf(word) < 0))">
+          {{ word }}
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div v-else-if="game.isLoading">Loading...</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="Bits.js"></script>
+<script src="dictionary.js"></script>
+<script src="wordfind.js"></script>
