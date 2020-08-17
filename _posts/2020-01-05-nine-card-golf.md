@@ -26,7 +26,7 @@ Our version has a few modifications, though, namely the following:
 - Three cards of the same rank in a column count as zero points, but not if they're in a row or a diagonal.
 - No bonus is awarded for a two-by-two block of cards of the same rank.
 
-Lately I've been working on a fairly large project that's mainly web-based (more on that in a future post), which means I've had to wrestle with all the headaches and maddening idiosyncrasies of cross-browser JavaScript development, not to mention CSS. By the time I got back from my grandparents' last week, I desperately needed a break, so I decided to write a command-line version of nines (or nine-card golf, as it were) in my language of choice, [Python](https://www.python.org/).
+Lately I've been working on a fairly large project that's mainly web-based (more on that in a future post), which means I've had to wrestle with all the headaches and maddening idiosyncrasies of cross-browser JavaScript development, not to mention CSS. Last week, I found myself in desperate need of a break, so I decided to write a command-line version of nines (or nine-card golf, as it were) in my language of choice, [Python](https://www.python.org/).
 
 The first thing I did was open up IDLE and begin hammering away.
 
@@ -248,5 +248,3 @@ To test out the AI, I pitted it against a seasoned nines player, myself. In a se
 The computer, in other words, is about as good at nines as I am.
 
 [View this project's source code on GitHub](https://github.com/jackmaurer/nines)
-
-_If you've made it this far, thanks for reading my first post! My hope is that it will be the first of many in which I recount my experiences as a hobby programmer and share some of the lessons I've learned along the way._
