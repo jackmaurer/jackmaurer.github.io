@@ -126,6 +126,4 @@ And there you have it. A simple, efficient mechanism for generating unique objec
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-I'll be back soon with more details on that big project I mentioned in [my last post](/2020/01/05/nine-card-golf.html).
-
 [^1]: Admittedly, this probability is exceedingly small. Assuming that the numbers returned by `Math.random()` have about sixteen digits after the decimal point, the probability of a conflict in a system of one thousand objects is roughly 0.000000005%. The probability that at least one conflict will occur among one billion such systems is around five percent. So an unchecked random number is actually a perfectly acceptable solution, provided you're okay with a one-in-twenty-billion chance of a rendering glitch.
